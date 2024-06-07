@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Regla de Tres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <h1>Calculadora de Regla de Tres</h1>
+        <div class="input-row">
+            <input type="text" class="input-field" id="x1" placeholder="X">
+            <input type="text" class="input-field" id="x2" placeholder="X">
+        </div>
+        <div class="input-row">
+            <input type="text" class="input-field" id="y1" placeholder="Y">
+            <input type="text" class="input-field" id="y2" placeholder="Y">
+        </div>
+        <div class="radio-buttons">
+            <label><input type="radio" name="proporcionalidad" value="directa" checked> Proporcionalidad Directa</label>
+            <label><input type="radio" name="proporcionalidad" value="inversa"> Proporcionalidad Inversa</label>
+        </div>
+        <div class="options-row">
+            <label for="decimals">Redondear a:</label>
+            <input type="number" id="decimals" value="1">
+            <span>decimal(es)</span>
+        </div>
+        <button id="calculate">Calcular</button>
+        <button id="clear">Borrar</button>
+        <div id="result"></div>
+        <button id="theme-toggle">Cambiar Tema</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
